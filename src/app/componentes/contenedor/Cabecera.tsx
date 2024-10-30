@@ -1,32 +1,34 @@
+import { NavLink } from "react-router-dom";
+import milogo from "../../../assets/img/logoReact.png";
 export const Cabecera = () => {
   return (
     <>
     <nav className="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">Navbar</a>
+      <NavLink className="navbar-brand" to="/"><img src={milogo} alt="el logo" /></NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarColor01">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+            <NavLink className="nav-link active" aria-current="page" to="/">Inicio</NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Editoriales</a>
+            <NavLink className="nav-link" to="*">Editoriales</NavLink>
           </li>
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Libros
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Registrar libros</a></li>
-            <li><a className="dropdown-item" href="#">Listar libros</a></li>
+            <li><NavLink className="dropdown-item" to="/libcre">Registrar libros</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/liblis">Listar libros</NavLink></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Administar libros</a></li>
+            <li><NavLink className="dropdown-item" to="/libadm">Administar libros</NavLink></li>
           </ul>
 
           <li className="nav-item">
-            <a className="nav-link" href="#">Acerca de</a>
+            <NavLink className="nav-link" to="/acer">Acerca de</NavLink>
           </li>
         </ul>
         <form className="d-flex" role="search">

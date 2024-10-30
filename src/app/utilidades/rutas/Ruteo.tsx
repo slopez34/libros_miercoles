@@ -12,9 +12,9 @@ export const Ruteo = () => {
         <Routes>
             <Route path="/" element= {<Inicio/>}/>
 
-            <Route path="libcre" element= {<LibroCrear/>}/>
-            <Route path="liblis" element= {<LibroListar/>}/>
-            <Route path="libadm" element= {<LibroAdmin/>}/>
+            <Route path="/libcre" element= {<LibroCrear/>}/>
+            <Route path="/liblis" element= {<LibroListar/>}/>
+            <Route path="/libadm" element= {<LibroAdmin/>}/>
 
             <Route path="/libact/:codigo" element= {<LibroActualizar/>}/>
 
