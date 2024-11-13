@@ -1,9 +1,3 @@
-export const Inicio = () =>  {
-    return (
-        <>
-            <br></br>
-            Soy el inicio <br />
-            Como el de la bienvenida...
-        </>
-    )
-}
+export const Inicio = () => {
+  return <>Soy el inicio Como el de la bienvenida...</>;
+};
